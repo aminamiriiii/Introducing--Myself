@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+
+body .h2{
+    opacity:.1;
+    color: #7d7d7d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 250px;
+    left: 150px;
+    transform: rotate(-25deg);
+    font-size: 6rem;
+    z-index: -1;}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 45px;}
+
+.navbar a {
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #004dc1;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;}
+
+.navbar .links a:hover{
+    transition: 1s ease all;
+    color:black;}
+
+.navbar .links {
+  flex-wrap: wrap;
+  overflow:visible;}
+
+/*end navbar*/
+
+.pages {
+    position: absolute;
+    top: 300px;
+    left: 150px;}
+
+.pages button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;}
+
+.pages button a {
+    color:black;
+}
+
+/*insta*/
+
+.pages .insta:hover{
+    transition: all ease .5s;
+    color: #E1306C;}
+
+/*tel*/
+
+.pages .tel:hover{
+    transition: all ease .5s;
+    color:#0088cc;}
+
+/*whatsapp*/
+
+.pages .whats:hover{
+    transition: all ease .5s;
+    color:#25D366;}
+
+/*end pages*/
+
+.pages .buttons {
+    display: flex;
+    justify-content: space-around;}
+
+.pages .buttons svg {
+    width: 55px;
+    height: 25px;}
+
+/*end pages*/
+/*start my image*/
+
+.image {
+    position: relative;
+    margin-left: 800px;
+    margin-top: 150px;
+    z-index: -10;}
+
+.footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:#eee;
+}
+
+.gray {
+    background-color: transparent;
+    width: 100%;
+    height: 90px;
+}
+
+/*end website */
+/*start responsive*/
+
+@media only screen and (max-width:650px) {
+
+    .kol {height: 1200px;}
+
+    html{overflow-x: hidden;
+    overflow-y: scroll;}
+    .my-logo{
+        margin: 20px 0px;
+    }
+
+    .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    } 
+    .my-logo{
+        width: 1000px;
+    }
+
+    .navbar .links {
+    display:flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: center;
+    }
+
+    .navbar .links a {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+    background-color: #eee;
+    border-radius: 10px;
+    }
+
+    .navbar .links a:hover {
+        transition: .5s ease all;
+        background-color: #787878;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .image {
+    position:absolute;
+    margin-left: -10px;
+    margin-top: 350px;
+    z-index: -10;
+    }
+
+    .pages {
+    position :relative;
+    left: 55px;
+    }
+
+    .buttons{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        }
+
+
+}
